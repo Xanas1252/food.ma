@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>food.ma</title>
+	<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>food.ma</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <button id="butt">give me baby !</button>
+   	<button id="butt">give me baby !</button>
+	<p id="result"></p>
+<script src="script.js">
 
-
-<script>
-    
-    const butt = document.getElementById('butt');
-    butt.onclick = () =>{
-        let urlreq = "/food.ma/meals.json";
-        let xhr = new XMLHttpRequest();
-        xhr.open('GET', urlreq);
-        xhr.responseType ='json';
-        const res = xhr.send();
-        console.log(res);
-    }
 </script>
 </body>
 </html>
