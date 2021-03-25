@@ -3,5 +3,7 @@ const Meals = ["Eggs + a piece of rbi3 on top + orange juice or tea + A warm ma7
 butt.onclick = () => {
 	const meal = Meals[Math.floor(Math.random() * 10)] ;
 	console.log(meal);
-	document.getElementById("result").innerHTML = meal;
+	const para = document.getElementById("result");
+	para.style.padding = "1em";
+	para.innerHTML = meal;
 } 
